@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Rotating Navigation and Page - HTML, CSS and JAVASCRIPT</title>
+</head>
+<body>
+
+    <div class="container"> <!--Global Content wrapper-->
+        <div class="circle-container"> <!--content show/hide buttons outer wrapper-->
+            <div class="circle"> <!--content show/hide buttons inner wrapper-->
+                <button id="close"> <!--content hide button-->
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open"> <!--content show button-->
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="content"> <!--Main Content wrapper-->
+            <div class="post"> <!--post-->
+                <img src="/img/dog.jpg" alt="dog">
+                <h1>Sweet Dog</h1>
+                <div class="meta">
+                    <small id="author" class="author"><a href="#janesmith">Jane Smith</a></small>
+                    <span class="separator">|</span>
+                    <small id="date" class="date">Date</small>
+                    <span class="separator">|</span>
+                    <small class="category"><a href="#cat">Dog</a></small>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse magni optio at harum molestiae numquam odio officiis dicta officia, ullam laborum delectus aperiam illum nesciunt? Porro nisi placeat, magni iusto ut voluptatum beatae minima rerum nobis? Totam adipisci maxime consectetur quae.
+                <a class="readmore" href="#readmore">Read More</a></p>
+            </div>
+            
+            <!-- <div class="post"> post -->
+                <!-- <img src="/img/cat.jpg" alt="cat">
+                <h1>Sweet Cat</h1>
+                <div class="meta">
+                    <small id="author" class="author"><a href="#johndoe">John Doe</a></small>
+                    <span class="separator">|</span>
+                    <small id="date" class="date">Date</small>
+                    <span class="separator">|</span>
+                    <small class="category"><a href="#cat">Cat</a></small>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse magni optio at harum molestiae numquam odio officiis
+                dicta officia, ullam laborum delectus aperiam illum nesciunt? Porro nisi placeat, magni iusto ut voluptatum beatae
+                minima rerum nobis? Totam adipisci maxime consectetur quae.
+                <a class="readmore" href="#readmore">Read More</a></p>
+            </div> -->
+        </div>
+    </div>
+
+    <nav> <!--Primary Hidden Navigation-->
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#home"><i class="fas fa-user-alt"></i>About</a></li>
+            <li><a href="#home"><i class="fas fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+    
+    <script src="/js/rotating.js"></script>
+</body>
+</html>
